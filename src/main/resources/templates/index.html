@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="~{fragments/topHeader :: headSection(pageTitle='How To Open a Beer Bottle with a Bottle Opener')}">
+</head>
+<body>
+    <div th:insert="~{fragments/topHeader :: topHeader}"></div>
+    <h5>
+        How To Open a Beer Bottle with a Bottle Opener.
+    </h5>
+    <div th:replace="~{fragments/tutorialImage :: tutorialImage('/img/homeImage.png')}"></div>
+
+    <footer>
+        <a th:href="@{/step-one}"><input type="button" value="Step One"></a>
+    </footer>
+    <div th:insert="~{fragments/footer :: footer}"></div>
+
+
+</body>
+</html>

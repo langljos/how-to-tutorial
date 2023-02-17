@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="~{fragments/topHeader :: headSection(pageTitle='Step Three: How To Open a Beer Bottle. ')}">
+</head>
+<body>
+<div th:insert="~{fragments/topHeader :: topHeader}"></div>
+<h5>
+    Step Three: Discard or recycle the bottle cap.
+</h5>
+<div th:replace="~{fragments/tutorialImage :: tutorialImage('/img/stepThree.png')}"></div>
+
+<div th:insert="~{fragments/navFooter :: navFooter(value1='Go Back', navLocation1='/step-two', value2='Restart?', navLocation2='/')}"></div>
+<div th:insert="~{fragments/footer :: footer}"></div>
+</body>
+</html>

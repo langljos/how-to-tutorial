@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<footer th:fragment="navFooter(value1, navLocation1, value2, navLocation2)">
+        <input type="button" th:value="${value1}" th:onclick="'window.location.href=\'' + @{${navLocation1}} + '\''">
+        <input type="button" th:value="${value2}" th:onclick="'window.location.href=\'' + @{${navLocation2}} + '\''">
+</footer>
+
+
+
+</body>
+</html>

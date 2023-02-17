@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:fragment="headSection(pageTitle)">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+    <title th:text="${pageTitle}">Title</title>
+
+</head>
+<body>
+
+<header th:fragment="topHeader">
+
+    <nav>
+        <ul>
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/step-one}">Step One</a></li>
+            <li><a th:href="@{/step-two}">Step Two</a></li>
+            <li><a th:href="@{/step-three}">Step Three</a></li>
+
+        </ul>
+    </nav>
+
+</header>
+</body>
+</html>
